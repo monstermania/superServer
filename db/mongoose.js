@@ -10,9 +10,10 @@ const connectionString = 'mongodb+srv://zeeshan:thereaper@dsbd-klbca.mongodb.net
 
 mongoose.connect(connectionString, {useNewUrlParser: true, useFindAndModify: false})
 .then(() =>{
-    console.log(`Successfuly fonnected to MongoDB Atlas!`)
+    console.log(`Successfuly connected to MongoDB Atlas!`)
 })
 
-.catch(() =>{
+.catch((error) =>{
     console.log(`Unable to connect to MongoDB Atlas!`)
+    console.lgo(error);
 })
