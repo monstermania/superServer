@@ -17,3 +17,5 @@ mongoose.connect(connectionString, {useNewUrlParser: true, useFindAndModify: fal
     console.log(`Unable to connect to MongoDB Atlas!`)
     console.lgo(error);
 })
+
+module.exportss = mongoose;
